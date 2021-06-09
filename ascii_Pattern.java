@@ -7,11 +7,16 @@ class ASCII{
 		for(int i = 1;i<=size * 2;i++) {
 			System.out.print("-");
 		}
-		System.out.print("+");
+		System.out.print("+ \n");
 	}
 	public void top_half() {
 		if(size==1) {
-			System.out.println("|<>|");
+			System.out.print("|<>|\n");
+			System.out.print("+");
+			for(int i = 1;i<=size * 2;i++) {
+				System.out.print("-");
+			}
+			System.out.print("+");
 			}
 			else {
 				int i = 1;
