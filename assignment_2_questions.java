@@ -121,7 +121,7 @@ temp_2=temp_2/10;
 	
 	}
 	
-	static int first_Occurence(int[] A, int x){
+	static int first_Occurence(int[] A, int x){//This Method will find the first Index of a duplicate element in an array
 		int left = 0;
         int right = A.length - 1;
         int result = -1;
@@ -149,7 +149,7 @@ temp_2=temp_2/10;
         return result;
 	}
 	
-static int last_Occurence(int[] A, int x){
+static int last_Occurence(int[] A, int x){//This method will find the last index of a duplicate element in an array
 	 int left = 0;
      int right = A.length - 1;
      int result = -1;
@@ -193,8 +193,11 @@ System.out.println("Enter the string whose character cases you wanna toggle : ")
 str=sc.nextLine();
 str=sc.nextLine();
 toggle_Case(str);
+System.out.println("The Following program will show the first and last index of the element in an array ");
+System.out.println("The array size and its elements are the same as given in the question ");
+System.out.println("The key is the same as given in the question");
 int[] A = {1, 3, 5, 5, 5, 5, 7, 123, 125};
-int key = 5;
+int key = 7;
 first_Last_Occurence(A, key);
 sc.close();
 	}
